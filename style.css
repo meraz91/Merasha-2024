@@ -115,10 +115,6 @@ body {
         background-position: center;
     }
 
-    #transpar {
-        background-color: rgba(255, 255, 255, 0.4) !important;
-    }
-
     .letter h4 {
         font-size: 13px;
         margin: 0 -20px;
