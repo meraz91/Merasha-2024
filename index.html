@@ -13,6 +13,9 @@
 
 <body>
 
+    <audio id="background-music" autoplay loop>
+        <source src="Music/Background relax.mp3" type="audio/mpeg">
+    </audio>
 
     <section id="countstart">
         <section style="height: 100vh; display: flex; justify-content: center; align-items: center;">
@@ -615,6 +618,25 @@
 
 
     <script>
+        window.onload = function () {
+            var audio = document.getElementById("background-music");
+            audio.volume = 0.5; // Adjust volume (0.0 to 1.0)
+
+            // You can add more logic here, for example, pause the music when the user clicks on a specific element
+            document.getElementById("pause-music").onclick = function () {
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            };
+        };
+
+
+
+
+
+
 
         var i = 0;
         var txt = "ভালবাসা সুন্দর, সবসময় সুন্দর। আমাদের দুনিয়ায় স্বাগতম! তোমরা শিখবে আমাদের কাছে থেকে!!! এই জন্মদিনে আমার আশা'র জন্য ছোট্ট একটি উপহার। শুভ জন্মদিন, আমার আশা!     ***@Merasha_Forever***";
