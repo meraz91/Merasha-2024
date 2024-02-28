@@ -41,7 +41,7 @@
                         </ul>
                     </div>
                 </div>
-                    <button class="btn btn-primary my-2" id="pause-music">Are you bored? Just Click!</button>
+                <button class="btn btn-primary my-2" id="pause-music">Are you bored? Just Click!</button>
                 <div>
 
                 </div>
@@ -627,11 +627,17 @@
             var audio = document.getElementById("background-music");
             audio.volume = 0.7; // Adjust volume (0.0 to 1.0)
 
+            var bgms = document.getElementById("pause-music");
             // You can add more logic here, for example, pause the music when the user clicks on a specific element
-            document.getElementById("pause-music").onclick = function () {
+            bgms.onclick = function () {
                 if (audio.paused) {
+                    document.getElementById("pause-music").style.background = "red";
+                    document.getElementById("pause-music").innerHTML = "Pause Music";
                     audio.play();
+
                 } else {
+                    document.getElementById("pause-music").innerHTML = "Play Music";
+                    document.getElementById("pause-music").style.background = "green";
                     audio.pause();
                 }
             };
