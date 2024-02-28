@@ -13,6 +13,7 @@
 
 <body>
 
+
     <audio id="background-music" autoplay loop>
         <source src="Music/Background relax.mp3" type="audio/mpeg">
     </audio>
@@ -39,6 +40,10 @@
                             <li>Lastly, kiss your husband (Meraz) thousand times, he he.</li>
                         </ul>
                     </div>
+                </div>
+                    <button class="btn btn-primary my-2" id="pause-music">Are you bored? Just Click!</button>
+                <div>
+
                 </div>
                 <p>@Merasha Forever</p>
             </div>
@@ -620,7 +625,7 @@
     <script>
         window.onload = function () {
             var audio = document.getElementById("background-music");
-            audio.volume = 0.5; // Adjust volume (0.0 to 1.0)
+            audio.volume = 0.7; // Adjust volume (0.0 to 1.0)
 
             // You can add more logic here, for example, pause the music when the user clicks on a specific element
             document.getElementById("pause-music").onclick = function () {
