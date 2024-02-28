@@ -113,10 +113,9 @@ body {
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
-        ba
     }
 
-    #transpar{
+    #transpar {
         background-color: rgba(255, 255, 255, 0.4) !important;
     }
 
