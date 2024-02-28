@@ -108,11 +108,12 @@ body {
 
 @media only screen and (max-width: 600px) {
     body {
-        background-image: url("images/content/smallbg.gif");
+        background-image: url("images/content/smallBG.gif");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
+        ba
     }
 
     .letter h4 {
