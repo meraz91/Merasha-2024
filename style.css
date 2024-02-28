@@ -6,7 +6,8 @@
 }
 
 body {
-    background-image: url("images/content/background.gif");
+    /*background-image: url("images/content/background.gif");*/
+    background-image: url("images/Carousel/9.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
