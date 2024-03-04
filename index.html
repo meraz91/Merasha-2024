@@ -14,38 +14,55 @@
 <body>
 
 
+    <!--Video Background Set-->
+
+
+
+
+
+
     <audio id="background-music" autoplay loop>
         <source src="Music/Background relax.mp3" type="audio/mpeg">
     </audio>
 
     <section id="countstart">
-        <section style="height: 100vh; display: flex; justify-content: center; align-items: center;">
-            <div id="transpar" style="background-color: rgba(255, 255, 255, 0.4);
-            border-radius: 2%;" class="text-center p-5 my-5" style="width: 100%;">
-                <h1 id="demo" style="font-weight: bolder;"></h1>
-                <p>Website will be opened at <b style="color: #8120ff;">9 March, 2024</b></p>
-                <div style="display: flex; align-items: center; justify-content: center;">
-                    <div style="text-align: left;">
-                        <p><b style="color: #8120ff;">Instructions</b> for using Merasha's Website!</p>
-                        <ul>
-                            <li>Allow the web to load completely first.</li>
-                            <li>Plug in headphone to your device and raise up volume to 75%.</li>
-                            <li>The web is enhanced with beautiful musics and tones in background.</li>
-                            <li>Visit using a laptop (Not to miss any content) first then mobile devices (This may hide
-                                contents for responsiveness effect).</li>
-                            <li>Start viewing content from the top of the page.</li>
-                            <li>Lastly, kiss your husband (Meraz) thousand times, he he.</li>
-                        </ul>
-                    </div>
-                </div>
-                <button class="btn btn-primary my-2" id="pause-music">Are you bored? Just Click!</button>
-                <div>
+        <section style="height: 100vh; display: flex; justify-content: center; align-items: center;" class="p-3">
+            <div style="display: flex; justify-content: center; align-items: center;" class="video-container">
+                <video autoplay muted loop id="background-video">
+                    <source src="./images/content/BGsmall.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
 
+                <div id="transpar" style="background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 2%;" class="text-center p-5 my-5" style="width: 100%;">
+                    <h1 id="demo" style="font-weight: bolder;"></h1>
+                    <p>Website will be opened at <b style="color: #8120ff;">9 March, 2024</b></p>
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <div style="text-align: left;">
+                            <p><b style="color: #8120ff;">Instructions</b> for using Merasha's Website!</p>
+                            <ul>
+                                <li>Allow the web to load completely first.</li>
+                                <li>Plug in headphone to your device and raise up volume to 75%.</li>
+                                <li>The web is enhanced with beautiful musics and tones in background.</li>
+                                <li>Visit using a laptop (Not to miss any content) first then mobile devices (This may
+                                    hide
+                                    contents for responsiveness effect).</li>
+                                <li>Start viewing content from the top of the page.</li>
+                                <li>Lastly, Hug your Meraz and Say <b class="text-primary">I love you</b>, he he.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary my-2" id="pause-music">Are you bored? Just Click!</button>
+                    <div>
+
+                    </div>
+                    <p>@Merasha Forever</p>
                 </div>
-                <p>@Merasha Forever</p>
             </div>
         </section>
     </section>
+
+
 
     <section style="display: none;" id="countend">
         <div style="display: none;" id="alert" class="alert alert-danger text-center" role="alert">
